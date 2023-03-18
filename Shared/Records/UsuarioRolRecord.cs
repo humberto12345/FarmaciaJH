@@ -2,7 +2,11 @@
 namespace FarmaciaJH.Shared.Records;
 
 public class UsuarioRolRecord
-{
+{  
+    public UsuarioRolRecord()
+    {
+        
+    }
     public UsuarioRolRecord(int id, string nombre, bool permisoParaCrear, bool permisoParaEditar, bool permisoParaEliminar)
     {
         this.Id = id;
