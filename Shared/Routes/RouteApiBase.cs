@@ -2,6 +2,7 @@ namespace FarmaciaJH.Shared.Routes;
 
 public class RouteApiBase
 {
+   
     public const string API = "/api";
     public int Id { get; set; }
     public const string IdParameter = " { Id:int;}";

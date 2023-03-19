@@ -1,8 +1,9 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace FarmaciaJH.Server.Model;
+namespace FarmaciaJH.Server.Models;
 
-public class Cliente{
+public class Cliente
+{
 
 [Key]
 public int IdCliente { get; set; }
