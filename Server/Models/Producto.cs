@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace FarmaciaJH.Server.Model;
+namespace FarmaciaJH.Server.Models;
 
 public class Producto{
 
