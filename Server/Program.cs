@@ -8,6 +8,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();
 builder.Services.AddDbContext<MyDBContext>();
+builder.Services.AddScoped<IMyDBContext,MyDBContext>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

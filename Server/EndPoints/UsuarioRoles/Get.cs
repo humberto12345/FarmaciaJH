@@ -1,7 +1,12 @@
+using System.Reflection.Metadata;
 using Ardalis.ApiEndpoints;
+using FarmaciaJH.Server.Models;
 using FarmaciaJH.Server.Context;
 using FarmaciaJH.Shared.Records;
+using FarmaciaJH.Shared.Routes;
 using FarmaciaJH.Shared.Wrapper;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 
 namespace FarmaciaJH.Server.Endpoints.UsuariosRoles;
@@ -16,16 +21,17 @@ public class Get : EndpointBaseAsync.WithoutRequest.WithActionResult<int>
         this.dbContext = dBContext;
     }
 
-httpGet()
-    public override async Task<ActionResult<int>> HandleAsync(CancellationToken cancellationToken)
+  [HttpGet(UsuarioRolRouteManager.BASE)]
+    public override async Task<ActionResult<Respuesta>> HandleAsync( CancellationToken cancellationToken = default)
     {
-        try{
+     try{
     var roles = await dbContext.UsuarioRoles
-    .Select(rol=>rol.ToRecord()).ToListAsync(cancellationToken);
-    
+    .Select(rol=>rol.ToRecord())
+    .ToListAsync(cancellationToken);
+  
     return Respuesta.Success(roles);
     }
-    catch(Exception ex) {
+    catch(Exception ex){
         return Respuesta.Fail(ex.Message);
         }
     }
