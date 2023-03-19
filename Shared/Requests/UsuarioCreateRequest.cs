@@ -23,4 +23,10 @@ public class UsuarioCreateRequest
     public string Password { get; set; } = null!;
     
 }
+public class UsuarioUpdateRequest : UsuarioCreateRequest
+{
+[Required(ErrorMessage ="Se debe proporcionar el Id del usuario a Modificar")]
+  public int Id { get; set; }
+
+}
 
