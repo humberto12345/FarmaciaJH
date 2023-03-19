@@ -34,7 +34,7 @@ public class ResultList<T>:Result
             Items = items
             };
     }
-        public static ResultList<T> Success(IEnumerable<T> items,List<string> messages)
+    public static ResultList<T> Success(IEnumerable<T> items,List<string> messages)
     {
         return new ResultList<T>(){
             Succeeded = true, 
@@ -43,3 +43,4 @@ public class ResultList<T>:Result
             };
     }
 }
+

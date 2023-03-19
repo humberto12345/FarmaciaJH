@@ -33,6 +33,7 @@ public int Id { get; set; } = 0;
 public string Titulo => Id>0? "Editar rol":"Crear rol";
 
 public UsuarioRolUpdateRequest Rol { get; set; } = new UsuarioRolUpdateRequest();
+
 protected override async Task OnInitializedAsync()
 {
     if(Id!=0){
