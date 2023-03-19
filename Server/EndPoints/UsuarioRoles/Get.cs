@@ -16,9 +16,9 @@ public class Get : EndpointBaseAsync.WithoutRequest.WithActionResult<Respuesta>
 {
     private readonly IMyDBContext dbContext;
 
-    public Get(IMyDBContext dBContext)
+    public Get(IMyDBContext dbContext)
     {
-        this.dbContext = dBContext;
+        this.dbContext = dbContext;
     }
     [HttpGet(UsuarioRolRouteManager.BASE)]
     public override async Task<ActionResult<Respuesta>> HandleAsync(CancellationToken cancellationToken = default)
