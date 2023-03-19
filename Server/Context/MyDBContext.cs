@@ -6,7 +6,7 @@ namespace FarmaciaJH.Server.Context;
 public interface IMyDBContext
 {
     DbSet<UsuarioRol> UsuarioRoles { get; set; }
-    DbSet<UsuarioRol> Usuario { get; set; }
+    DbSet<Usuario> Usuario { get; set; }
 
     Task<int> SaveChangesAsync(CancellationToken cancellationToken = default);
 }
@@ -32,7 +32,8 @@ public class MyDBContext : DbContext, IMyDBContext
     }
     #region Tablas De mi base de datos
     public DbSet<UsuarioRol> UsuarioRoles { get; set; } = null!;
-    public DbSet<UsuarioRol> Usuario { get; set; } = null!;
+    public DbSet<Usuario> Usuario { get; set; } = null!;
+    
 
     #endregion
 }
