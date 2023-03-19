@@ -9,11 +9,11 @@ public class ResultList<T>: Result
         return new ResultList<T>(){Succeeded = false, Message = new List<String>(){"X"}};
     }
 
- public static ResultList<T> Success(IEnumerable<T>items,String message)
+ public static ResultList<T> Success(IEnumerable<T>items)
  {
         return new ResultList<T>(){
             Succeeded = true,
-             Message = new List<String>(){message},
+             Message = new List<String>(){"OK"},
              Items = items
              };
     }

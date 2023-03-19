@@ -1,3 +1,5 @@
+using System.ComponentModel.DataAnnotations;
+
 namespace FarmaciaJH.Server.Model;
 
 public class Cliente{
