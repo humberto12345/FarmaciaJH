@@ -38,6 +38,7 @@ public class UsuarioRolManager : IUsuarioRolManager
     }
     public async Task<Result<int>> CreateAsync(UsuarioRolCreateRequest request)
     {
+    
        var response = await httpClient.PostAsJsonAsync(UsuarioRolRouteManager.BASE,request);
        return await response.ToResult<int>();
     }

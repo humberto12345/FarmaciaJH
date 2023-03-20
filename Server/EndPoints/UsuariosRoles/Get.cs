@@ -13,6 +13,8 @@ namespace FarmaciaJH.Server.Endpoints.UsuariosRoles;
 using Respuesta = ResultList<UsuarioRolRecord>;
 
 public class Get : EndpointBaseAsync.WithoutRequest.WithActionResult<Respuesta>
+
+
 {
     private readonly IMyDBContext dbContext;
 
@@ -25,10 +27,10 @@ public class Get : EndpointBaseAsync.WithoutRequest.WithActionResult<Respuesta>
     {
        try
        {
-        var roles = await dbContext.UsuarioRoles
+        var roles = await dbContext.UsuariosRoles
        .Select(rol=>rol.ToRecord())
        .ToListAsync(cancellationToken);
-
+    
        return Respuesta.Success(roles);
        }
        catch(Exception ex)
