@@ -9,7 +9,9 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();
 builder.Services.AddDbContext<MyDBContext>();
 builder.Services.AddScoped<IMyDBContext,MyDBContext>();
-//builder.Services.AddDbContext<ClientDBContext>();
+
+
+//builder.Services.AddDbContext<ClientDBContext>()
 
 var app = builder.Build();
 
