@@ -1,21 +1,22 @@
 
-@page "/Medicamentos"
+@page "/medicamentos"
 
 <h1>Ventas de Farmacos</h1>
 
 <br>
 
-<th>Nombre del Cliente</th>      
+<th>Cliente</th>    
+ <div>  </div>  
        <input type="text">
-        <th> Nombre </th>
+        <div> Nombre </div>
        <input type="text">
-        <th>Codigo</th>
+        <label>Codigo</label>
        <input type="text">
-         <th>Costo</th>
+         <label>Costo</label>
           <input type="text">
-         <th>Fecha</th>
+         <label>Fecha</label>
          <input type="text">
-         <th>Cantidad</th>
+         <label>Cantidad</label>
          <input type="text">
        <div>
          <button class="btn btn-primary">Enviar</button>
@@ -38,12 +39,18 @@
            
         </tbody>
     </table>
-      @code{
-        public void Agregar()
+      
+@code{
+    public void Agregar()
     {
     
-    urlHelper.NavigateTo("/");
+    urlHelper.NavigateTo("/login");
+
+}
+        public void Aceptar()
+    {
+    
+    urlHelper.NavigateTo("/medicaentos");
 
 }
     }
-

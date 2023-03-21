@@ -25,7 +25,7 @@ public class MyDBContext : DbContext, IMyDBContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        optionsBuilder.UseSqlServer(config.GetConnectionString("CliMedFarmaJH"));
+        optionsBuilder.UseSqlServer(config.GetConnectionString("FarmaciaJH"));
     }
 
     public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)

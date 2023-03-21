@@ -1,6 +1,6 @@
 @page "/rol/crear"
 @page "/rol/editar/{Id:int}"
-<EditForm Model="@Rol" OnVaylidSubmit="Send">
+<EditForm Model="@Rol" OnValidSubmit="Send">
 <h1>@Titulo</h1>
     <DataAnnotationsValidator/>
     <ValidationSummary/>
@@ -58,3 +58,4 @@ public async void Send()
 }
 
 }
+

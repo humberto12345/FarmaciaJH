@@ -5,17 +5,31 @@
 <input type="text">
 <th>Contraseña</th>
 <input type="text">
-<th>De nuevo Contraseña</th>
+<th>Confimar Contraseña</th>
 <input type="password">
 
 <br>
-<button class="btn btn-primary"@onclick="Agregar">Guardar</button>
+<button class="btn btn-primary"@onclick="Aceptar">Guardar</button>
 
 @code{
 
-    public void Agregar(){
+    public void Aceptar(){
 
-    urlHelper.NavigateTo("/login");
+    urlHelper.NavigateTo("/Login");
+    
 
 }
-}y
+
+
+}
+@code{
+
+    public void Cambia(){
+
+    urlHelper.NavigateTo("/newcontra");
+    
+
+}
+
+
+}

@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace FarmaciaJH.Server.Migrations
 {
     [DbContext(typeof(MyDBContext))]
-    [Migration("20230321102634_InicialCreate")]
+    [Migration("20230321212316_InicialCreate")]
     partial class InicialCreate
     {
         /// <inheritdoc />

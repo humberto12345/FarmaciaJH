@@ -1,5 +1,8 @@
 
-
+body {
+    background-image: url("https://thumbs.dreamstime.com/b/fondo-innovador-del-concepto-de-la-atenci%C3%B3n-sanitaria-m%C3%A9dica-abstracta-de-la-farmacia-77335227.jpg");
+    background-color: #daa5a5;
+   }
 .header {
     background-color: #21c6cc;
     text-align: center;

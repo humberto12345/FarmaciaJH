@@ -7,16 +7,16 @@
    <input type="text">
    <th>Contraseña</th>
    <input type="password">
-   <label class="btn btn-primary">Cambiar Contraseña</label>
    <br>
    <br>
-   <button class="btn btn-primary">Acceder</button>
-
+   <button class="btn btn-primary"@onclick="Agregar">Acceder</button>
+<br>
+ <br>
 @code{
 
     public void Agregar(){
 
-    urlHelper.NavigateTo("/Medicamentos");
+    urlHelper.NavigateTo("/medicamentos");
 
 }
 }
