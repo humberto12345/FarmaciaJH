@@ -1,14 +1,25 @@
-@page "/UsuarioReg"
+@page "/usuarioReg"
 
 <h1>Registro de Usuario</h1>
 
-<div class="form-floating mb-3">
-  <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-  <label for="floatingInput">Email address</label>
-</div>
-<div class="form-floating">
-  <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-  <label for="floatingPassword">Password</label>
-           <button class="btn btn-primary">Enviar</button>
-          <button class="btn btn-primary">Calcular</button>
-</div>
+
+<h1>Iniciar sesión</h1>
+
+
+   <th>Correo</th>
+   <input type="text">
+   <th>Contraseña</th>
+   <input type="password">
+   <label class="btn btn-primary"@onclick="Agregar">Registrarse</label>
+   <br>
+   <br>
+   <button class="btn btn-primary"@onclick="Agregar">Acceder</button>
+
+@code{
+
+    public void Agregar(){
+
+    urlHelper.NavigateTo("/Medicamentos");
+
+}
+}

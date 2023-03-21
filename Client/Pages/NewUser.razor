@@ -1,0 +1,23 @@
+@page "/NewUser"
+<h1>Registro de Usuario</h1>
+
+
+<th>Nombre Completo</th>
+<input type="text">
+<th>Correo </th>
+<input type="text">
+<th>Contraseña</th>
+<input type="password">
+<th>De nuevo Contraseña</th>
+<input type="password">
+<br>
+<button class="btn btn-primary"@onclick="Agregar">Guardar</button>
+
+@code{
+
+    public void Agregar(){
+
+    urlHelper.NavigateTo("/Medicamentos");
+
+}
+}y
