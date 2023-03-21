@@ -7,7 +7,9 @@ public interface IMyDBContext
 {
     DbSet<UsuarioRol> UsuariosRoles { get; set; }
     DbSet<Usuario> Usuarios { get; set; }
-
+     DbSet<Cliente> Clientes { get; set; }
+    DbSet<Producto> Productos { get; set; }
+    DbSet<Medicamento> Medicamentos { get; set; }
     Task<int> SaveChangesAsync(CancellationToken cancellationToken = default);
 }
 
@@ -33,13 +35,8 @@ public class MyDBContext : DbContext, IMyDBContext
     #region Tablas De mi base de datos
     public DbSet<UsuarioRol> UsuariosRoles { get; set; } = null!;
     public DbSet<Usuario> Usuarios { get; set; } = null!;
-    public DbSet<Cliente> Cliente { get; set; } = null!;
-    public DbSet<Usuario> Medicamento { get; set; } = null!;
-    
-
-
- 
-    
-
+    public DbSet<Cliente> Clientes { get; set; } = null!;
+    public DbSet<Medicamento> Medicamentos { get; set; } = null!;
+   public DbSet<Producto> Productos { get; set; } = null!; 
     #endregion
 }
