@@ -33,6 +33,12 @@ public class MyDBContext : DbContext, IMyDBContext
     #region Tablas De mi base de datos
     public DbSet<UsuarioRol> UsuariosRoles { get; set; } = null!;
     public DbSet<Usuario> Usuarios { get; set; } = null!;
+    public DbSet<Cliente> Cliente { get; set; } = null!;
+    public DbSet<Usuario> Medicamento { get; set; } = null!;
+    
+
+
+ 
     
 
     #endregion
