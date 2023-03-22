@@ -40,7 +40,7 @@
             <input class="form-control" type="text" name="txtApellido" id="txtVendedor">
         </div>
     </div>
-   
+   <button type="button" class="btn btn-secondary btn-lg"@onclick="guarda">Agregar Producto </button>
 <br>
 <br>
 
@@ -61,11 +61,11 @@
         </tbody>
     </table>
 
-<button class="btn btn-primary"@onclick="guarda">Guardar</button>
+
 
 @code{
     public void guarda()
     {
-        urlHelper.NavigateTo("/medicamento");
+        urlHelper.NavigateTo("/medicamentos");
     }
 }
