@@ -1,0 +1,71 @@
+@page "/nuevoprod"
+
+
+<h1>Ventas de Farmacos</h1>
+<br>
+ <div class="row mt-2">
+    <div class="col">
+        <div class="form-group">
+            <label for="Txtproducto">Producto</label>
+            <input class="form-control" type="text" name="Txtproducto" id="Txtproducto">
+        </div>
+</div>
+</div>
+
+    <div class="col ">
+        <div class="form-group">
+            <label for="txtApellido">codProd</label>
+            <input class="form-control" type="text" name="txtApellido" id="txtApellido">
+        </div>
+    </div>
+    <div class="col ">
+        <div class="form-group">
+            <label for="TxtPrecio">Desc_Producto</label>
+            <input class="form-control" type="text" name="Txtcosto" id="TxtDescprod">
+        </div>
+    </div>
+    <h1>Ventas de Farmacos</h1>
+<br>
+ <div class="row mt-2">
+    <div class="col">
+        <div class="form-group">
+            <label for="Txtproducto">Precio</label>
+            <input class="form-control" type="text" name="Txtproducto" id="TxtPrecio">
+        </div>
+</div>
+</div>
+
+    <div class="col ">
+        <div class="form-group">
+            <label for="txtApellido">Vendedor</label>
+            <input class="form-control" type="text" name="txtApellido" id="txtVendedor">
+        </div>
+    </div>
+   
+<br>
+<br>
+
+<th>
+    <td>
+        Producto
+    </td>
+    <td>
+        Codprod
+    </td><td>
+        DescProducto
+    </td><td>
+        Precio
+    </td>
+    <td>
+        Vendedor
+    </td>
+</th>
+
+<button class="btn btn-primary"@onclick="guarda">Guardar</button>
+
+@code{
+    public void guarda()
+    {
+        urlHelper.NavigateTo("/medicamento");
+    }
+}

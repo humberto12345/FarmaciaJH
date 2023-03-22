@@ -1,15 +1,36 @@
-@page "/usarioreg"
+@page "/regusuario"
 
-<h1>Iniciar sesión</h1>
+<h1>Registro de Nuevos Usuarios</h1>
 
 
-   <th>Correo</th>
-   <input type="text">
-   <th>Contraseña</th>
-   <input type="password">
-   <th>Correo</th>
-   <input type="text">
-   <th>Contraseña</th>
-   <input type="password">
+<div class="form-floating mb-3">
+  <input type="Name" class="form-control" id="floatingInput" placeholder="Felix Benzan">
+  <label for="floatingInput">Nombre y Apellido</label>
+</div>
+<select class="form-select" aria-label="Default select example">
+  <option selected>Sexo</option>
+  <option value="1">Masculino</option>
+  <option value="2">Femenino</option>
+  <option value="3">Calanco</option>
+</select>
+<div class="form-floating mb-3">
+  <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+  <label for="floatingInput">Correo</label>
+</div>
+<div class="form-floating">
+  <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+  <label for="floatingPassword">Password</label>
+</div>
+ <button class="btn btn-primary"@onclick="reg">Registrar</button>
+   
+
+@code{
+
+    public void reg(){
+
+    urlHelper.NavigateTo("/Login");
+
+}
+}
 
  

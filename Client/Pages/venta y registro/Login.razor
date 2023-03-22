@@ -13,6 +13,14 @@
 </div>
    <br>
    <button class="btn btn-primary"@onclick="ir">Acceder</button>
+   <div>
+   <label> Nuevo Usuario</label>
+   <button class="btn btn-primary"@onclick="reg">Registrarse</button>
+   </div>
+     <div>
+   <label> Cambiar Contraseña</label>
+   <button class="btn btn-primary"@onclick="newcon">Cambiar</button>
+   </div>
 <br>
  <br>
 @code{
@@ -21,6 +29,20 @@
 
     urlHelper.NavigateTo("/medicamentos");
 
+
 }
+public void newcon(){
+
+    urlHelper.NavigateTo("/newcontra");
+
+
+}
+public void reg(){
+
+    urlHelper.NavigateTo("/regusuario");
+
+
+}
+
 }
 </body>

@@ -37,8 +37,11 @@
         </div>
     </div>
 
-         <button class="btn btn-primary">Enviar</button>
-
+         <button class="btn btn-primary"@onclick="ir">Enviar</button>
+<br>
+<div>
+    <button class="btn btn-primary"@onclick="newpro">Nuevo</button>
+</div>
     <table class="table">
         <thead>
             <tr>
@@ -57,16 +60,16 @@
     </table>
       
 @code{
-    public void Agregar()
+    public void ir()
     {
     
-    urlHelper.NavigateTo("/login");
+    urlHelper.NavigateTo("/medicamento");
 
 }
-        public void Compra()
+        public void newpro()
     {
     
-    urlHelper.NavigateTo("/");
+    urlHelper.NavigateTo("/nuevoprod");
 
 }
     }
