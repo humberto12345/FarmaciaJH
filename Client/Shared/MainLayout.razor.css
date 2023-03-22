@@ -1,10 +1,7 @@
 
-body {
-    background-image: url("https://thumbs.dreamstime.com/b/fondo-innovador-del-concepto-de-la-atenci%C3%B3n-sanitaria-m%C3%A9dica-abstracta-de-la-farmacia-77335227.jpg");
-    background-color: #b16666;
-   }
+
 .header {
-    background-color: #21c6cc;
+    background-color: #141616;
     text-align: center;
     padding: 20px;
 }
@@ -13,10 +10,13 @@ body {
     position: relative;
     display: flex;
     flex-direction: column;
-}
+    background-image: url(https://img.freepik.com/vector-premium/antecedentes-medicos-pastillas_252901-64.jpg?size=626&ext=jpg&ga=GA1.2.2073615496.1679464286&semt=ais://img.freepik.com/vector-gratis/luz-tratamiento-medico-iconos-simples-elementos-circulos-colores_1284-49129.jpg?w=740&t=st=1679464307~exp=1679464907~hmac=705878782cd71f1b0e0b067bd8573fd10957ca68e804aadef3bc3b00d2506458);
+    background-color: #080202;
+ }
+
 .top-row {
-    background-color: #3fbed1;
-    border-bottom: 1px solid #d8cdcd;
+    background-color: #318888;
+    border-bottom: 1px solid #130a0a;
     justify-content: flex-end;
     height: 3.5rem;
     display: flex;

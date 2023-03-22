@@ -49,6 +49,11 @@
     background-color: rgba(17, 199, 129, 0.25);
     color: rgb(238, 24, 24);
 }
+.body
+{
+
+    background-color: rgba(34, 221, 221, 0.25);
+}
 
 @media (min-width: 641px) {
     .navbar-toggler {
