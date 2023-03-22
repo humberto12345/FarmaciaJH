@@ -1,17 +1,13 @@
 
 
-.header {
-    background-color: #141616;
-    text-align: center;
-    padding: 20px;
-}
+
 
 .page {
     position: relative;
     display: flex;
     flex-direction: column;
-    background-image: url(https://img.freepik.com/vector-premium/antecedentes-medicos-pastillas_252901-64.jpg?size=626&ext=jpg&ga=GA1.2.2073615496.1679464286&semt=ais://img.freepik.com/vector-gratis/luz-tratamiento-medico-iconos-simples-elementos-circulos-colores_1284-49129.jpg?w=740&t=st=1679464307~exp=1679464907~hmac=705878782cd71f1b0e0b067bd8573fd10957ca68e804aadef3bc3b00d2506458);
-    background-color: #080202;
+    background-color: #00cfa2;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBUDRAcj37HYv-414SpRYgUmywL5Q_E6QkCoEh_XcRiFQYWDBmtGgoEbkoO3_Ywl9EO9k&usqp=CAU);
  }
 
 .top-row {
@@ -28,7 +24,7 @@ main {
 }
 
 .sidebar {
-    background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
+    background-image: linear-gradient(180deg, rgb(58, 97, 170) 0%, #3a0647 70%);
 }
 
 
