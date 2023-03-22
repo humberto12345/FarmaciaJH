@@ -2,37 +2,53 @@
 @page "/medicamentos"
 
 <h1>Ventas de Farmacos</h1>
-
 <br>
-
-<th>Cliente</th>    
- <div>  </div>  
-       <input type="text">
-        <div> Nombre </div>
-       <input type="text">
-        <label>Codigo</label>
-       <input type="text">
-         <label>Costo</label>
-          <input type="text">
-         <label>Fecha</label>
-         <input type="text">
-         <label>Cantidad</label>
-         <input type="text">
-       <div>
-         <button class="btn btn-primary">Enviar</button>
+ <div class="row mt-2">
+    <div class="col">
+        <div class="form-group">
+            <label for="Txtproducto">Producto</label>
+            <input class="form-control" type="text" name="Txtproducto" id="Txtproducto">
         </div>
+</div>
+</div>
+
+    <div class="col ">
+        <div class="form-group">
+            <label for="txtApellido">codProd</label>
+            <input class="form-control" type="text" name="txtApellido" id="txtApellido">
+        </div>
+    </div>
+    <div class="col ">
+        <div class="form-group">
+            <label for="TxtPrecio">Precio</label>
+            <input class="form-control" type="text" name="Txtcosto" id="Txtcosto">
+        </div>
+    </div>
+    <div class="col ">
+        <div class="form-group">
+            <label for="TxtCant">Cantidad</label>
+            <input class="form-control" type="text" name="Txtnombre" id="Txtnombre">
+        </div>
+    </div>
+    <div class="col ">
+        <div class="form-group">
+            <label for="TxtDsc">Descuento</label>
+            <input class="form-control" type="text" name="TxtCantidad" id="TxtCantidad">
+        </div>
+    </div>
+
+         <button class="btn btn-primary">Enviar</button>
 
     <table class="table">
         <thead>
             <tr>
                 <th>Id</th>
-                <th>Nombre </th>
-                <th>Codigo</th>
-                <th>Costo</th>
-                <th>Fecha</th>
-                <th>Nombre del Cliente</th>
+                <th>Producto </th>
+                <th>CodProd</th>
+                <th>Precio</th>
                 <th>Cantidad</th>
-                 <th>Total</th>
+                <th>Descuento</th>
+                <th>Total</th>
             </tr>
         </thead>
         <tbody>
@@ -47,10 +63,10 @@
     urlHelper.NavigateTo("/login");
 
 }
-        public void Aceptar()
+        public void Compra()
     {
     
-    urlHelper.NavigateTo("/medicaentos");
+    urlHelper.NavigateTo("/");
 
 }
     }
