@@ -3,8 +3,11 @@
 }
 
 .top-row {
+   
     height: 3.5rem;
     background-color: rgba(55, 138, 161, 0.4);
+    font-family: 'Courier New', Courier, monospace;
+
 }
 
 .navbar-brand {
@@ -32,27 +35,23 @@
     }
 
     .nav-item ::deep a {
-        color: #110202;
-        border-radius: 4px;
+        color: #f1e3e3;
+        border-radius: 5px;
         height: 3rem;
         display: flex;
         align-items: center;
         line-height: 3rem;
+        background-color: rgb(89, 177, 177);
     }
 
 .nav-item ::deep a.active {
-    background-color: rgba(17, 199, 129, 0.25);
+    background-color: rgb(89, 177, 177);
     color: rgb(238, 24, 24);
 }
 
 .nav-item ::deep a:hover {
     background-color: rgba(17, 199, 129, 0.25);
     color: rgb(238, 24, 24);
-}
-.body
-{
-
-    background-color: rgba(34, 221, 221, 0.25);
 }
 
 @media (min-width: 641px) {
